@@ -48,7 +48,8 @@ if __name__ == "__main__":
                 heading_num = length - len(headings)
                 unordered = line.lstrip('-')
                 unordered_num = length - len(unordered)
-                ordered = line.lstrip('*')
+                pattern = re.compile(r'\d+\.\s')
+                ordered = re.sub(pattern, "", line)
                 ordered_num = length - len(ordered)
                 # headings and lists
                 if 1 <= heading_num <= 6:
