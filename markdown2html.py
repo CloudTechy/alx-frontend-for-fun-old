@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """A Markdown script that takes an argument of 2 strings
-and generates HTML files"""
+and generates HTML files """
 
 import sys
 import os
